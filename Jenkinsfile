@@ -30,6 +30,7 @@ pipeline {
       steps {
         echo 'Publishing..'
         echo 'Running docker push..'
+        sh 'docker push $DOCKER_ID/cotu:latest'
       }
     }
 
