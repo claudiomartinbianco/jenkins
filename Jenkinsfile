@@ -22,6 +22,7 @@ pipeline {
       steps {
         echo 'Building..'
         echo 'Running docker build -t sntshk/cotu .'
+        sh 'docker build -t $DOCKER_ID/cotu:latest .'
       }
     }
 
